@@ -12,3 +12,15 @@ class Animals {
 }
 let bingo = new Animals("Bingo", "Hairy");
 console.log(bingo);
+
+function Animals(name, specie) {
+    this.name = name;
+    this.specie = specie;
+}
+Animals.prototype.sing = function(){
+    return `${this.name} can sing`;
+}
+Animals.prototype.dance = function() {
+    return `${this.name} can dance`;
+}
+let Bingo = new Animals("Bingo", "Hairy");
